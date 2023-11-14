@@ -1,0 +1,14 @@
+@import "bootstrap/scss/bootstrap";
+@import "../main.scss";
+
+@import "@scss/components/hero-1.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Rubik:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap");
+
+body {
+  padding: 0px 24px;
+
+  @include media-breakpoint-up(md) {
+    padding: 0px 98px;
+  }
+}

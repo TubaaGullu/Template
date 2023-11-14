@@ -1,0 +1,49 @@
+.hero-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  p {
+    margin: 0;
+    font-size: $font-size-base;
+    line-height: 1.585em;
+    max-width: 13.28rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-lg;
+      max-width: 100%;
+    }
+  }
+
+  &.with-subscribe {
+    align-items: stretch;
+    gap: 0.75rem;
+
+    p,
+    input {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  .img {
+    img {
+      width: 100%;
+      height: auto;
+
+      @include media-breakpoint-up(md) {
+        width: 573px;
+        height: 290px;
+      }
+    }
+  }
+}
+.container-2 {
+  gap: 1.94rem;
+  margin-top: 82px;
+  @include media-breakpoint-up(md) {
+  }
+}
